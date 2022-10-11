@@ -11,6 +11,7 @@ const Header = () => {
             <div>
                 <Banner></Banner>
             </div>
+            
         </div>
     );
 };
