@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
-import { BeakerIcon, EyeIcon } from '@heroicons/react/24/solid'
+import { EyeIcon } from '@heroicons/react/24/solid'
 
 const Quiz = ({qsn}) => {
     const [value,setValue]=useState("")
@@ -38,10 +38,10 @@ console.log(answer)
          <p>{value}</p>
       </div>
     <div className='m-4 p-4 gap-3'>
-    <p onClick={(e)=>ans(e.target.innerText)}>{options[0]}</p>
-    <p onClick={(e)=>ans(e.target.innerText)} >{options[1]}</p>
-    <p onClick={(e)=>ans(e.target.innerText)}>{options[2]}</p>
-    <p onClick={(e)=>ans(e.target.innerText)}>{options[3]}</p>
+    <p onClick={(e)=>ans(e.target.innerText)}>1.{options[0]}</p>
+    <p onClick={(e)=>ans(e.target.innerText)}>2.{options[1]}</p>
+    <p onClick={(e)=>ans(e.target.innerText)}>3.{options[2]}</p>
+    <p onClick={(e)=>ans(e.target.innerText)}>4.{options[3]}</p>
     </div>
    </div>
   </div>

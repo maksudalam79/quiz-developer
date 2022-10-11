@@ -5,7 +5,7 @@ const Cart = ({cart}) => {
     console.log(cart)
     const {id,logo,name,total}=cart
     return (
-       <div className="card card-compact w-56 bg-base-100 shadow-xl">
+       <div className="card card-compact w-64 bg-base-100 shadow-xl mt-4 border">
   <figure><img src={logo} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title justify-center">{name}</h2>

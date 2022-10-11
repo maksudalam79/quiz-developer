@@ -1,8 +1,10 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Answer from './Component/Answer/Answer';
 import { api } from './Component/Api/Api';
 import Home from './Component/Home/Home';
 import Qsn from './Component/Qsn/Qsn';
+import Found from './Found/Found';
 import Main from './layout/Main';
 function App() {
   const router=createBrowserRouter([
@@ -28,7 +30,11 @@ function App() {
            element:<Qsn></Qsn>
         },
         {
-          path:'*',element:<div>Not Found</div>
+          path:'/question',
+          element:<Answer></Answer>
+        },
+        {
+          path:'*',element:<Found></Found>
         }
        
       ]

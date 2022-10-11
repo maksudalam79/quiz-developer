@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='sm:col-1'>
             <div className="navbar bg-base-100">
   <div className="flex-1">
     <Link className="btn btn-ghost normal-case text-xl text-white">Quiz Developers</Link>
@@ -12,6 +12,7 @@ const Navbar = () => {
     <ul className="menu menu-horizontal p-0">
       <li><Link to={'/home'}>Home</Link></li>
       <li><Link to={'/topic'}>Topic</Link></li>
+      <li><Link to={'/question'}>Question</Link></li>
       <li><Link to={'/about'}>About</Link></li>
     </ul>
   </div>
