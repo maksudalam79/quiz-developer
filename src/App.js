@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import { api } from './Component/Api/Api';
 import Home from './Component/Home/Home';
 import Main from './layout/Main';
 function App() {
@@ -10,12 +11,17 @@ function App() {
       children:[
         {
           path:'/',
-          element:<Home></Home>
+          element:<Home></Home>,
+          loader:api,
         },
         {
           path:'/home',
+          loader:api,
           element:<Home></Home>
         },
+        {
+          
+        }
        
       ]
     }
