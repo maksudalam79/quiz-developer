@@ -4,6 +4,7 @@ import Answer from './Component/Answer/Answer';
 import { api } from './Component/Api/Api';
 import Home from './Component/Home/Home';
 import Qsn from './Component/Qsn/Qsn';
+import Statistics from './Component/Statistics/Statistics';
 import Found from './Found/Found';
 import Main from './layout/Main';
 function App() {
@@ -32,6 +33,11 @@ function App() {
         {
           path:'/question',
           element:<Answer></Answer>
+        },
+        {
+          path:'/statistics',
+          loader:api,
+          element:<Statistics></Statistics>
         },
         {
           path:'*',element:<Found></Found>
