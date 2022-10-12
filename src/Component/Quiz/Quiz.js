@@ -4,13 +4,10 @@ import { EyeIcon } from '@heroicons/react/24/solid'
 
 const Quiz = ({qsn}) => {
     const [value,setValue]=useState("")
-    // console.log(qsn)
     const {question,options,correctAnswer}=qsn
-    console.log(correctAnswer)
     const answer = correctAnswer.replaceAll(" ", "");
-console.log(answer)
-	const ans = innerText => {
-		const text = innerText.replaceAll(" ", "");
+    const ans = innerText => {
+	const text = innerText.replaceAll(" ", "");
         console.log(text)
 		if (answer === text) {
             console.log("right")
@@ -20,14 +17,10 @@ console.log(answer)
 			toast.warning("sorry", { autoClose: 500 });
 		}
 	};
-
     const eye=(correctAnswer)=>{
         setValue(correctAnswer)
     }
-
-
-    
-    return (
+return (
         <div className='m-4'>
             <div className="mockup-window border bg-base-300">
   <div className="flex justify-center px-4 py-16 bg-base-200">
