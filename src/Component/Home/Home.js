@@ -15,7 +15,7 @@ const Home = () => {
       <Banner></Banner>
       </div>
       <div>
-      <div  className='grid justify-center  gap-4 m-4'>
+      <div  className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center  gap-4 m-4'>
             {
               cartsObj.map(cart=><Cart
               key={cart.id}
