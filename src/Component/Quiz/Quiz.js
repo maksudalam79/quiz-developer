@@ -31,7 +31,7 @@ return (
    <div>
       <div className='flex justify-between'>
          <h2 className='text-2xl'>{question}</h2>
-         <EyeIcon onClick={()=>eye(correctAnswer)} className="h-6 w-6 text-blue-500"/>
+         <EyeIcon onClick={()=>eye(correctAnswer)} className="h-6 w-6 text-blue-500 cursor-pointer"/>
          <p>{value}</p>
       </div>
     <div className='m-4 p-4 gap-3'>
