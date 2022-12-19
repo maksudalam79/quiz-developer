@@ -8,7 +8,7 @@ const Contect = () => {
     emailjs
       .sendForm(
         "service_pgcx0ns",
-        "service_pgcx0ns",
+        "template_et02zya",
         e.target,
         "AlC4xepvnAWgfm-mS"
       )
